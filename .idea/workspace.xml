@@ -52,7 +52,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/JavaCalculator/src/Calculator.java</url>
-          <line>19</line>
+          <line>20</line>
           <properties class="Calculator" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
           </properties>

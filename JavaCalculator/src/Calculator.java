@@ -1,3 +1,4 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -7,9 +8,9 @@ public class Calculator implements ActionListener {
     JFrame frame;
     JTextField textField;
     JButton[] numberButtons = new JButton[10];
-    JButton[] operationButtons = new JButton[8];
+    JButton[] operationButtons = new JButton[9];
     JButton addButton, subButton, mulButton, divButton;
-    JButton decButton, equalButton, delButton, clearButton;
+    JButton decButton, equalButton, delButton, clearButton, negButton;
     JPanel panel;
 
     Font calculatorFont = new Font("Comic Sans MS", Font.PLAIN, 30);
@@ -38,6 +39,9 @@ public class Calculator implements ActionListener {
         equalButton = new JButton("=");
         clearButton = new JButton("CLEAR");
         delButton = new JButton("DEL");
+        negButton = new JButton("+/-");
+
+
 
         operationButtons[0] = addButton;
         operationButtons[1] = subButton;
@@ -47,8 +51,9 @@ public class Calculator implements ActionListener {
         operationButtons[5] = equalButton;
         operationButtons[6] = clearButton;
         operationButtons[7] = delButton;
+        operationButtons[8] = negButton;
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 9; i++) {
             operationButtons[i].addActionListener(this);
             operationButtons[i].setFont(calculatorFont);
             operationButtons[i].setFocusable(false); //button outline
@@ -61,6 +66,7 @@ public class Calculator implements ActionListener {
             numberButtons[i].setFocusable(false);
         }
 
+        negButton.setBounds(50, 475, 100, 40);
         clearButton.setBounds(50, 25, 145, 50);
         delButton.setBounds(205, 25, 145, 50);
 
@@ -150,6 +156,7 @@ public class Calculator implements ActionListener {
         subButton.setForeground(Color.darkGray);
 
         frame.add(panel);
+        frame.add(negButton);
         frame.add(clearButton);
         frame.add(delButton);
         frame.add(textField);
@@ -231,6 +238,12 @@ public class Calculator implements ActionListener {
             for (int i = 0; i < numberText.length() - 1; i++) {
                 textField.setText(textField.getText() + numberText.charAt(i));
             }
+        }
+
+        if (e.getSource() == negButton) {
+            double enteredNumber = Double.parseDouble(textField.getText());
+            enteredNumber *= -1;
+            textField.setText(String.valueOf(enteredNumber));
         }
 
     }
