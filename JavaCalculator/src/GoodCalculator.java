@@ -55,7 +55,7 @@ public class GoodCalculator implements ActionListener {
         for (int i = 0; i < 9; i++) {
             operationButtons[i].addActionListener(this);
             operationButtons[i].setFont(calculatorFont);
-            operationButtons[i].setFocusable(true); //button outline
+            operationButtons[i].setFocusable(false); //button outline
         }
 
         signButton.setBounds(50, 85, 100, 40);
