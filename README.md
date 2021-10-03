@@ -1,5 +1,4 @@
 # JavaCalculator
-<<<<<<< Updated upstream
 Simple Calculator Program made in Java
 
 ## General Info / Introduction
@@ -26,7 +25,4 @@ In the future, I plan on implementing:
 
 ## Source / Inspiration
 This program is inspired by this tutorial: https://youtu.be/dfhmTyRTCSQ
-=======
- Calculator Program made with Java
-j
->>>>>>> Stashed changes
+
