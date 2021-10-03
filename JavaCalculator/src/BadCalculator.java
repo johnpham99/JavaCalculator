@@ -1,9 +1,8 @@
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Calculator implements ActionListener {
+public class BadCalculator implements ActionListener {
 
     JFrame frame;
     JTextField textField;
@@ -18,8 +17,8 @@ public class Calculator implements ActionListener {
     double num1 = 0, num2 = 2, result = 0;
     char operator;
 
-    Calculator() {
-        frame = new JFrame("Calculator");
+    BadCalculator() {
+        frame = new JFrame("Bad Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 550);
         frame.setLayout(null);
@@ -164,8 +163,7 @@ public class Calculator implements ActionListener {
     }
 
     public static void main (String[] args) {
-
-        Calculator TexasInstrument = new Calculator();
+        BadCalculator TexasInstrument = new BadCalculator();
     }
 
     @Override
