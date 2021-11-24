@@ -29,5 +29,5 @@ In the future, I plan on implementing:
  * Calculations that utilize more than 2 numbers
 
 ## Source / Inspiration
-This program is inspired by this tutorial: https://youtu.be/dfhmTyRTCSQ
+This project is inspired by this tutorial: https://youtu.be/dfhmTyRTCSQ
 
