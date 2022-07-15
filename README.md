@@ -21,8 +21,8 @@ There are two different versions of calculator included: the "GoodCalculator", w
 To run this project, simply compile and run one of the Calculator files in the src folder.
 
 ## Status
-This project is not yet complete.
-In the future, I plan on implementing:
+No plans to come back to this.
+However, some extra features could include:
  * Output formattimg
  * An image/logo
  * Sound Effects
